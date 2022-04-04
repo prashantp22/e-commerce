@@ -30,7 +30,7 @@
   starter code provided by Rutgers Bootcamp
 
   ## Tests
-    https://youtu.be/xrLRhAOJrCM
+    https://www.youtube.com/watch?v=xrLRhAOJrCM
    
   ## Questions
   If you have any questions please email me at address provided below.
