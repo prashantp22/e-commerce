@@ -10,11 +10,7 @@ router.get('/', (req, res) => {
   include: [
     {
       model: Product,
-      as: 'product',
-      include: {
-        model: Category,
-        attributes: ['category_name']
-      }
+      as: 'product'
     }
   ]
 })
@@ -35,11 +31,7 @@ router.get('/:id', (req, res) => {
     include: [
       {
         model: Product,
-        as: 'product',
-        include: {
-          model: Category,
-          attributes: ['category_name']
-        }
+        as: 'product'
       }
     ]
   })
@@ -54,7 +46,6 @@ router.post('/', (req, res) => {
   // create a new tag
   Tag.create({
     tag_name: req.body.tag_name,
-    product_id: req.body.product_id
   })
     .then(dbCommentData => res.json(dbCommentData))
     .catch(err => {
